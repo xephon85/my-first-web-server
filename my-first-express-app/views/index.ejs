@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My First Express App</title>
+  </head>
+  <body>
+
+      <h1><%= `${greeting} ${name} ${intro}` %></h1>
+      <ul>Likes</ul>
+      <% likes.forEach(function(like) { %>
+        <li><%= like %></li>
+      <% }); %>
+
+
+  </body>
+</html>
