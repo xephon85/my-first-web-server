@@ -7,11 +7,17 @@
   <body>
 
       <h1><%= `${greeting} ${name} ${intro}` %></h1>
+      <p>
+        <img src="<%= img %>" />
+      </p>
       <ul>Likes</ul>
       <% likes.forEach(function(like) { %>
         <li><%= like %></li>
       <% }); %>
-
+      <ul>Dislikes</ul>
+      <% dislikes.forEach(function(dislike) { %>
+        <li><%= dislike %></li>
+      <% }); %>
 
   </body>
 </html>
